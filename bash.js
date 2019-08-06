@@ -4,6 +4,10 @@ const pwdFunc = require('./pwd');
 const ls = require('./ls');
 const cat = require('./cat');
 
+const done = (output) => {
+    
+}
+
 process.stdout.write('prompt> ');
 
 //The stdin 'data' event fires after a user types in a line
@@ -22,5 +26,7 @@ process.stdin.on('data', (data) => {
         process.stdout.write('\nprompt > ');
     }
 });
+
+
 
 
