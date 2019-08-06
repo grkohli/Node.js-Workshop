@@ -1,9 +1,4 @@
-function pwd(){
-   
-        //cmd = __dirname;
-        //OR can use process.cwd()
-  return process.cwd();
-    
-}
-    
-    module.exports=pwd();
+module.exports = () => {
+  console.log('You typed:', process.cwd());
+  process.stdout.write('\nprompt > ');
+};
